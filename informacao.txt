@@ -1,0 +1,3 @@
+https://dotnetcodr.com/2014/01/17/getting-a-return-value-from-a-task-with-c/
+https://dotnetcodr.com/task-parallel-library/
+https://pt.stackoverflow.com/questions/56086/reconhecer-itens-duplicados-em-uma-lista
