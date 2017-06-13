@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace CNPJCPF
@@ -11,13 +9,13 @@ namespace CNPJCPF
 
     public class Controle
     {
-        public event StatusInterno StatusEvento;
+        //public event StatusInterno StatusEvento;
 
-        public void TempoConsumoProcesso(string item)
-        {
+        //public void TempoConsumoProcesso(string item)
+        //{
 
-            StatusEvento(10, "Task-1 iniciou. Task-1 esta em processo...");
-            Task1();            
+            //StatusEvento(10, "Task-1 iniciou. Task-1 esta em processo...");
+            //Task1();            
             //StatusEvento(20, "Task-1 finalizou. Task-2 esta em processo...");
             //Task2();
             //StatusEvento(40, "Task-2 finalizou. Task-3 esta em processo...");
@@ -27,7 +25,7 @@ namespace CNPJCPF
             //StatusEvento(80, "Task-4 finalizou. Task-5 esta em processo...");
             //Task5();
             //StatusEvento(100, "Task-5 finalizou. Todas as tarefas foram completadas com sucesso!");            
-        }    
+        //}    
         
         public async Task<string> RemoveCaracteresTask(string item)
         {            
@@ -40,6 +38,25 @@ namespace CNPJCPF
             {
                 throw ex;
             }            
+        }
+
+        public async Task<List<string>> RemoveCaracteresTask(string[] itens)
+        {
+            List<string> lista = new List<string>();
+
+            try
+            {
+                foreach (var i in itens)
+                {
+                    lista.Add(RemoveCaracteres(i));
+                }
+
+                return await Task.FromResult(lista);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<string>> RemoveIntensDuplicadosTask(string[] item)
@@ -90,29 +107,29 @@ namespace CNPJCPF
             }           
         }
 
-        private void Task5()
-        {
-            Thread.Sleep(5000);
-        }
+        //private void Task5()
+        //{
+        //    Thread.Sleep(5000);
+        //}
 
-        private void Task4()
-        {
-            Thread.Sleep(4000);
-        }
+        //private void Task4()
+        //{
+        //    Thread.Sleep(4000);
+        //}
 
-        private void Task3()
-        {
-            Thread.Sleep(3000);
-        }
+        //private void Task3()
+        //{
+        //    Thread.Sleep(3000);
+        //}
 
-        private void Task2()
-        {
-            Thread.Sleep(2000);
-        }
+        //private void Task2()
+        //{
+        //    Thread.Sleep(2000);
+        //}
 
-        private void Task1()
-        {
-            Thread.Sleep(1000);
-        }
+        //private void Task1()
+        //{
+        //    Thread.Sleep(1000);
+        //}
     }
 }

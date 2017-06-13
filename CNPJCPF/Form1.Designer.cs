@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblQuantidadeRegistro = new System.Windows.Forms.Label();
             this.txtCnpjCpf = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveCaracter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveDuplicados)).BeginInit();
@@ -51,9 +52,9 @@
             this.txtQuantidadeRegistro,
             this.toolStripProgressBar1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 499);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(503, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(458, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -76,18 +77,18 @@
             // 
             // btnAjustarCnpjCpf
             // 
-            this.btnAjustarCnpjCpf.Location = new System.Drawing.Point(3, 57);
+            this.btnAjustarCnpjCpf.Location = new System.Drawing.Point(3, 449);
             this.btnAjustarCnpjCpf.Name = "btnAjustarCnpjCpf";
             this.btnAjustarCnpjCpf.Size = new System.Drawing.Size(234, 23);
             this.btnAjustarCnpjCpf.TabIndex = 6;
-            this.btnAjustarCnpjCpf.Text = "Ajustar CNPJ/CPF\r\n";
+            this.btnAjustarCnpjCpf.Text = "Ajustar";
             this.btnAjustarCnpjCpf.UseVisualStyleBackColor = true;
             this.btnAjustarCnpjCpf.Click += new System.EventHandler(this.btnAjustarCnpjCpf_Click);
             // 
             // lblRemocaoCaracteresEspeciais
             // 
             this.lblRemocaoCaracteresEspeciais.AutoSize = true;
-            this.lblRemocaoCaracteresEspeciais.Location = new System.Drawing.Point(320, 119);
+            this.lblRemocaoCaracteresEspeciais.Location = new System.Drawing.Point(287, 36);
             this.lblRemocaoCaracteresEspeciais.Name = "lblRemocaoCaracteresEspeciais";
             this.lblRemocaoCaracteresEspeciais.Size = new System.Drawing.Size(166, 13);
             this.lblRemocaoCaracteresEspeciais.TabIndex = 8;
@@ -95,7 +96,7 @@
             // 
             // imgRemoveCaracter
             // 
-            this.imgRemoveCaracter.Location = new System.Drawing.Point(282, 109);
+            this.imgRemoveCaracter.Location = new System.Drawing.Point(249, 26);
             this.imgRemoveCaracter.Name = "imgRemoveCaracter";
             this.imgRemoveCaracter.Size = new System.Drawing.Size(32, 32);
             this.imgRemoveCaracter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -104,7 +105,7 @@
             // 
             // imgRemoveDuplicados
             // 
-            this.imgRemoveDuplicados.Location = new System.Drawing.Point(282, 162);
+            this.imgRemoveDuplicados.Location = new System.Drawing.Point(249, 79);
             this.imgRemoveDuplicados.Name = "imgRemoveDuplicados";
             this.imgRemoveDuplicados.Size = new System.Drawing.Size(32, 32);
             this.imgRemoveDuplicados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -114,7 +115,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(320, 171);
+            this.label1.Location = new System.Drawing.Point(287, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 13);
             this.label1.TabIndex = 10;
@@ -123,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 565);
+            this.label2.Location = new System.Drawing.Point(0, 423);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 11;
@@ -132,25 +133,35 @@
             // lblQuantidadeRegistro
             // 
             this.lblQuantidadeRegistro.AutoSize = true;
-            this.lblQuantidadeRegistro.Location = new System.Drawing.Point(62, 565);
+            this.lblQuantidadeRegistro.Location = new System.Drawing.Point(65, 423);
             this.lblQuantidadeRegistro.Name = "lblQuantidadeRegistro";
             this.lblQuantidadeRegistro.Size = new System.Drawing.Size(0, 13);
             this.lblQuantidadeRegistro.TabIndex = 12;
             // 
             // txtCnpjCpf
             // 
-            this.txtCnpjCpf.Location = new System.Drawing.Point(3, 86);
+            this.txtCnpjCpf.Location = new System.Drawing.Point(3, 24);
             this.txtCnpjCpf.Name = "txtCnpjCpf";
-            this.txtCnpjCpf.Size = new System.Drawing.Size(234, 476);
+            this.txtCnpjCpf.Size = new System.Drawing.Size(234, 396);
             this.txtCnpjCpf.TabIndex = 13;
             this.txtCnpjCpf.Text = "";
             this.txtCnpjCpf.TextChanged += new System.EventHandler(this.txtCnpjCpf_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(0, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Itens:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 605);
+            this.ClientSize = new System.Drawing.Size(458, 521);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCnpjCpf);
             this.Controls.Add(this.lblQuantidadeRegistro);
             this.Controls.Add(this.label2);
@@ -161,7 +172,7 @@
             this.Controls.Add(this.btnAjustarCnpjCpf);
             this.Controls.Add(this.statusStrip1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Util";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveCaracter)).EndInit();
@@ -184,6 +195,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblQuantidadeRegistro;
         private System.Windows.Forms.RichTextBox txtCnpjCpf;
+        private System.Windows.Forms.Label label3;
     }
 }
 
