@@ -41,9 +41,12 @@
             this.lblQuantidadeRegistro = new System.Windows.Forms.Label();
             this.txtCnpjCpf = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveCaracter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveDuplicados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -156,11 +159,33 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Itens:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CNPJCPF.Properties.Resources.Github;
+            this.pictureBox1.Location = new System.Drawing.Point(243, 283);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(262, 398);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(165, 13);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://github.com/jrpacheco/util";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 521);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCnpjCpf);
             this.Controls.Add(this.lblQuantidadeRegistro);
@@ -177,6 +202,7 @@
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveCaracter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgRemoveDuplicados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +222,8 @@
         private System.Windows.Forms.Label lblQuantidadeRegistro;
         private System.Windows.Forms.RichTextBox txtCnpjCpf;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
